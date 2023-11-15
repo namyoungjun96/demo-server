@@ -1,9 +1,15 @@
+spring:
+    application:
+        name: demo-app
+
 logging:
     level:
         com: debug
         org: info
     file:
-        name: ${logging.file.path}/${service.name:${spring.application.name}}.service.log
+        name: ${logging.file.path}/${spring.application.name}}.service.log
         path: logs
     pattern:
         console:
+server:
+    port: 7060

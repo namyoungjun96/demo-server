@@ -1,0 +1,9 @@
+logging:
+    level:
+        com: debug
+        org: info
+    file:
+        name: ${logging.file.path}/${service.name:${spring.application.name}}.service.log
+        path: logs
+    pattern:
+        console:
